@@ -14,38 +14,61 @@ header .LogoPrincipal {
     width: 100%;
 }
 
+.navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0;
+}
+
+.ms-auto{
+    width: 100%;
+}
+
+@media (max-width: 991.98px) {
+    .navbar.bg-light {
+    background-color: #FACD01 !important;
+    }
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
-header .Listas{
+header nav .nav-item{
     width: 100%;
     font-family: 'Patua One', cursive;
     font-weight: bold;
     background-color: #FACD01;
-    font-size: 20px;
-    padding: 10px 0;
+    font-size: 13px;
 }
+
+
+
 
 header nav ul li a{
     color: #003051;
     text-decoration: none;
-    margin: 120px;
+    text-align: center;
 }
+
+
+@media (max-width: 576px) {
+    header nav .nav-item{
+        font-size: 10px;
+    }
+}
+
 
 /*main*/
 main .TextoUno{
     color: white;
     text-align: center;
-    font-size: 40px;
+    font-size: 20px;
     margin: 0;
     padding: 10px;
 }
 
-main div img{
-    width: 45%;
-}
-
-main .ImagenesLP{
-    display: flex;
-    justify-content: space-around;
+@media (max-width: 576px) {
+    main .TextoUno{
+        font-size: 13px;
+    }
 }
 
 main .GrupoRwc{
@@ -56,9 +79,9 @@ main .GrupoRwc{
 
 main section p{
     color: white;
-    font-size: 35px;
+    font-size: 40px;
     margin: 0 50px;
-    line-height: 60px;
+    line-height: 50px;
 }
 main .TextoFondo{
     color: white;
@@ -90,53 +113,89 @@ main .Contacto{
     text-align: left;
     width: 40%;
     margin: 0 auto;
-    padding: 0 20px;
-    border: 2px solid black;
+    padding: 20px;
     border-radius: 20px;
     background-color: #D9D9D9;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: 700;
-    line-height: 50px;
+    line-height: 30px;
+    box-shadow: 0 0 25px black;
 }
 
 main input{
+    font-size: 20px;
+}
+
+@media (max-width: 576px) {
+    main .Contacto{
+        width: 50%;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    main input{
+        font-size: 15px;
+    }
+}
+
+
+
+/*footer*/
+
+footer .TextoDos{
+    color: white;
     font-size: 30px;
     text-align: center;
 }
 
-main form button{
-    font-size: 20px;
-    padding: 0 50px;
-    margin: 0 280px;
-    background-color: #003051;
-    color: #FACD01;
-    border-radius: 20px;
-    font-weight: 700;
+@media (max-width: 576px) {
+    footer .TextoDos {
+        font-size: 15px;
+        text-align: start;
+        margin-bottom: 5px;
+    }
 }
 
-/*footer*/
-footer .TextoDos{
-    color: white;
-    font-size: 40px;
-    padding-right: 100px;
-}
+
 footer .Sponsors{
-    display: flex;
-    align-items: center;
-    margin-left: 130px;
-    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
 }
-footer div a{
-    margin: 20px;
-    padding-left: 30px;
+
+footer .row{
+    --bs-gutter-x: 0;
 }
+
+
 
 footer .LogosRedes img{
-    width: 50px;
-    height: auto;
+    width: 30px;
+    margin: 10px;
 }
+
+@media (max-width: 576px) {
+    footer .LogosRedes img{
+        width: 20px;
+    }
+}
+
+.LogosRedes a{
+    cursor: auto;
+}
+
+.LogosRedes img{
+    cursor: pointer;
+}
+
+
 footer .Derechos{
     color: white;
     text-align: right;
     margin-right: 40px;
+    font-size: 15px;
+}
+
+@media (max-width: 576px) {
+    footer .Derechos{
+        font-size: 10px;
+    }
 }
