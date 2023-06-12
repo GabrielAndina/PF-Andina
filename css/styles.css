@@ -7,7 +7,7 @@
 
 /*CONDICIONALES*/
 body {
-  background-image: linear-gradient(rgb(139, 4, 4), rgb(2, 2, 82));
+  background-color: rgb(107, 5, 5);
 }
 
 header .nav-item {
@@ -82,7 +82,7 @@ header .navbar-nav {
 /*main*/
 main section p {
   color: white;
-  font-size: 23px;
+  font-size: 30px;
   line-height: 35px;
 }
 @media (max-width: 576px) {

@@ -18,7 +18,7 @@ body {
         background-color: black;
     } 
     @else if $modo == mundial {
-        background-image: linear-gradient(rgb(139, 4, 4),rgb(2, 2, 82));
+        background-color: rgb(107, 5, 5);
     }
     }
     
