@@ -1,0 +1,90 @@
+/*main*/
+
+main{
+    .TextoUno{
+        @extend .textoPrin;
+    }
+    section{
+    p{
+            color: white;
+            font-size: 23px;
+            line-height: 35px;
+        }
+    }
+    @media (max-width: 576px) {
+        .GrupoRwc{
+            img{
+                width: 300px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        } 
+        section{
+            p{
+            font-size: 15px;
+            line-height: 25px;
+            margin: 10px;
+            }
+        } 
+    }
+    .TextoFondo{
+        color: white;
+        font-size: 20px;
+        background-color: red;
+        font-style: italic;
+        text-align: center;
+    }
+    
+    @media (max-width: 576px){
+        .TextoFondo{
+            font-size: 13px;
+        }
+    }
+    .TextoTres{
+        @include texto-index;
+    }    
+    .img-prop{
+        width: 100%;
+        height: 250px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .PumasStore:hover{
+        @extend .animatePrin;
+    }
+    .img-jug:hover{
+        @extend .img-general;
+        @extend .animatePrin;
+    }
+    .img-jug{
+        img{
+            width: 100%;
+        }
+    }
+    
+    .row{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    figcaption{
+        @include texto-sub-img;
+    }
+    @media (max-width: 576px) {
+        .img-prop{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .Contacto{
+        @include estilo-contacto;
+    }
+    input{
+        font-size: 20px;
+    }
+    @media (max-width: 576px) {
+        input{
+        font-size: 15px;
+        }
+    }
+}

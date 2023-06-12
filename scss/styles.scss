@@ -1,0 +1,147 @@
+/*Reset css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*CONDICIONALES*/
+body {
+
+    $modo: mundial;
+    
+    @if $modo == normal{
+        background-color: #003051;
+    }
+    
+    @if $modo == oscuro {
+        background-color: black;
+    } 
+    @else if $modo == mundial {
+        background-image: linear-gradient(rgb(139, 4, 4),rgb(2, 2, 82));
+    }
+    }
+    
+    header{
+        .nav-item {
+        $modo: mundial;
+        
+        @if $modo == normal{
+            background-color: #FACD01;
+        }
+        
+        @if $modo == oscuro {
+            background-color: rgb(43, 42, 42);
+        } 
+        @else if $modo == mundial {
+            background-image: linear-gradient (rgb(139, 4, 4),rgb(2, 2, 82));
+        }
+        }
+        .bg-light-d{
+                    $modo: mundial;
+                
+                @if $modo == normal{
+                    background-color: #FACD01;
+                }
+                
+                @if $modo == oscuro {
+                    background-color: rgb(43, 42, 42);
+                } 
+                @else if $modo == mundial {
+                    background: linear-gradient(to top, rgb(121, 0, 0), rgb(2, 2, 82)) ;
+            }
+        }
+        
+        .navbar-nav{
+            $modo: mundial;
+        
+        @if $modo == normal{
+            --bs-navbar-color: #003051;
+            --bs-navbar-hover-color: black;
+        }
+        
+        @if $modo == oscuro {
+            --bs-navbar-color: grey;
+            --bs-navbar-hover-color: white;
+        } 
+        @else if $modo == mundial {
+            --bs-navbar-color: white;
+            --bs-navbar-hover-color: rgb(215, 30, 30);
+        } 
+        }
+    
+}
+
+/*EXTEND*/
+.img-general {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textoPrin{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 0px;
+    text-shadow: 2px 2px 4px black;
+    @media (max-width: 576px){
+        font-size: 15px;
+    }
+}
+
+.animatePrin{
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+}
+
+/*MIXIN*/
+@mixin estilo-contacto{
+    text-align: left;
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 30px;
+    box-shadow: 0 0 25px black;
+    @media (max-width: 576px){
+        width: 50%;
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+@mixin texto-index{
+    font-size: 17px;
+    text-align: center;
+    width: 100%;
+    color: white;
+    @media (max-width: 576px){
+        font-size: 13px;
+        
+    }
+}
+
+@mixin texto-sub-img{
+        color: white;
+        font-size: 13px;
+        text-align: center;
+        margin-top: 3px;   
+    @media (max-width: 576px){
+        font-size: 10px;
+    }
+}
+
+
+
+/*Imports*/
+@import 'header';
+@import 'main';
+@import 'footer';
+

@@ -1,0 +1,40 @@
+
+
+/*header*/
+header{
+    .LogoPrincipal {
+        width: 100%;
+    }
+    .navbar{
+        --bs-navbar-padding-x: 0;
+        --bs-navbar-padding-y: 0;
+    }
+    .ms-auto{
+    width: 100%;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+    .nav-item{
+    width: 100%;
+    font-family: 'Patua One', cursive;
+    font-weight: bold;
+    font-size: 13px;
+    }
+    @media (max-width: 576px) {
+    .nav-item{
+    font-size: 10px;
+    }
+    }
+    .navbar-nav{
+        text-align: center;
+        text-shadow: 0 0 50px black;
+    }
+    nav{
+        ul{
+            li{
+                a:hover{
+                    @extend .animatePrin;
+                }
+            }
+        }
+    }
+} 

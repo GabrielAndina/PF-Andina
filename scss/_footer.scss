@@ -1,0 +1,59 @@
+/*footer*/
+
+footer{
+    .TextoDos{
+        @extend .textoPrin;
+        margin: 0;
+    }
+    @media (max-width: 576px) {
+        .TextoDos {
+            font-size: 15px;
+            text-align: start;
+            margin-bottom: 5px;
+        }
+    }
+    .Sponsors{
+        padding: 20px;
+        width: 100%;
+    }
+    .row{
+        --bs-gutter-x: 0;
+    }
+    .LogosRedes{
+        img{
+            width: 30px;
+            margin: 10px;
+        }
+    } 
+    @media (max-width: 576px) {
+        .LogosRedes{
+            img{
+                width: 20px;
+            }
+        }
+    }
+    .LogosRedes{
+        a{
+            cursor: auto;
+        }
+    }
+        .LogosRedes{
+            img{
+            cursor: pointer;
+        }
+        }
+        .Derechos{
+            color: white;
+            text-align: right;
+            margin-right: 40px;
+            font-size: 15px;
+        }
+        @media (max-width: 576px) {
+            .Derechos{
+                font-size: 10px;
+            }
+        }
+        .LogosRedes img:hover {
+            @extend .animatePrin;
+        }                    
+}
