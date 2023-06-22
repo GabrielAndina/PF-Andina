@@ -7,14 +7,14 @@
 
 /*CONDICIONALES*/
 body {
-  background-color: rgb(107, 5, 5);
+  background-image: linear-gradient(rgb(139, 4, 4), rgb(2, 2, 82));
 }
 
 header .nav-item {
   background-image: linear-gradient rgb(139, 4, 4), rgb(2, 2, 82);
 }
 header .bg-light-d {
-  background: linear-gradient(to top, rgb(121, 0, 0), rgb(2, 2, 82));
+  background: linear-gradient(to top, transparent, rgb(2, 2, 82));
 }
 header .navbar-nav {
   --bs-navbar-color: white;

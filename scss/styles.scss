@@ -7,20 +7,19 @@
 
 /*CONDICIONALES*/
 body {
-
     $modo: mundial;
-    
-    @if $modo == normal{
-        background-color: #003051;
+  
+    @if $modo == normal {
+      background-color: #003051;
     }
-    
+  
     @if $modo == oscuro {
-        background-color: black;
+      background-color: black;
     } 
     @else if $modo == mundial {
-        background-color: rgb(107, 5, 5);
+      background-image: linear-gradient(rgb(139, 4, 4), rgb(2, 2, 82));
     }
-    }
+  }  
     
     header{
         .nav-item {
@@ -48,7 +47,7 @@ body {
                     background-color: rgb(43, 42, 42);
                 } 
                 @else if $modo == mundial {
-                    background: linear-gradient(to top, rgb(121, 0, 0), rgb(2, 2, 82)) ;
+                    background: linear-gradient(to top, transparent, rgb(2, 2, 82)) ;
             }
         }
         
