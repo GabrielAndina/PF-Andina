@@ -80,6 +80,11 @@ header .navbar-nav .nav-link.active {
   width: 100%;
   height: 350px;
 }
+@media (max-width: 576px) {
+  .IMGnico-juan, main .ImgJuan, main .ImgNico {
+    height: auto;
+  }
+}
 
 /*MIXIN*/
 /*Imports*/
@@ -216,6 +221,11 @@ main .Mapa {
 main .VideoYT {
   width: 100%;
   height: 350px;
+}
+@media (max-width: 576px) {
+  main .VideoYT {
+    height: 250px;
+  }
 }
 main .ImgPichot {
   object-fit: cover;
