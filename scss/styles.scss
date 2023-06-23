@@ -8,20 +8,20 @@
 /*CONDICIONALES*/
 body {
     $modo: mundial;
-  
+
     @if $modo == normal {
-      background-color: #003051;
+        background-color: #003051;
     }
-  
+
     @if $modo == oscuro {
-      background-color: black;
+        background-color: black;
     } 
     @else if $modo == mundial {
-      background-image: linear-gradient(rgb(139, 4, 4), rgb(2, 2, 82));
+        background-image: linear-gradient(rgb(139, 4, 4), rgb(2, 2, 82));
     }
-  }  
-    
-    header{
+}  
+
+header{
         .nav-item {
         $modo: mundial;
         
@@ -68,7 +68,21 @@ body {
             --bs-navbar-hover-color: rgb(215, 30, 30);
         } 
         }
-    
+        .navbar-nav .nav-link.active{
+            $modo: mundial;
+
+            @if $modo == normal{
+                --bs-navbar-active-color: black;
+            }
+
+            @if $modo == oscuro{
+                --bs-navbar-active-color: white;
+            }
+
+            @else if $modo == mundial{
+                --bs-navbar-active-color: rgb(215, 30, 30);
+            }
+        }
 }
 
 /*EXTEND*/
@@ -97,43 +111,68 @@ body {
     transform: scale(1.1);
 }
 
+.ImgRWC{
+    @media (max-width: 576px){
+        width: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.RWCtext{
+    color: white;
+    font-size: 30px;
+    line-height: 37px;
+    @media (max-width: 576px){
+        font-size: 15px;
+        line-height: 20px;
+        margin: 10px;
+    }
+}
+.IMGnico-juan{
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+}
+
 /*MIXIN*/
 @mixin estilo-contacto{
     text-align: left;
-    width: 40%;
+    width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    height: auto;
+    padding: 25px;
     border-radius: 20px;
     background-color: #D9D9D9;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 40px;
+    font-size: 20px;
+    font-weight: 600;
     box-shadow: 0 0 25px black;
     @media (max-width: 576px){
         width: 90%;
-        font-size: 12px;
-        line-height: 30px;
+        font-size: 15px;
+        line-height: 20px;
     }
 }
 
 @mixin texto-index{
-    font-size: 17px;
-    text-align: center;
+    font-size: 20px;
+    text-align: start;
     width: 100%;
     color: white;
     @media (max-width: 576px){
-        font-size: 13px;
+        font-size: 15px;
         
     }
 }
 
 @mixin texto-sub-img{
         color: white;
-        font-size: 13px;
+        font-size: 15px;
         text-align: center;
-        margin-top: 3px;   
+        margin-top: 3px;
+        line-height: 20px;   
     @media (max-width: 576px){
-        font-size: 10px;
+        font-size: 15px;
     }
 }
 

@@ -4,36 +4,20 @@ main{
     .TextoUno{
         @extend .textoPrin;
     }
-    section{
-    p{
-            color: white;
-            font-size: 30px;
-            line-height: 35px;
+    .TextoRWC{
+            @extend .RWCtext;
         }
-    }
-    @media (max-width: 576px) {
-        .GrupoRwc{
-            img{
-                width: 300px;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
+    .GrupoRwc{
+        img{
+        @extend .ImgRWC;
             }
-        } 
-        section{
-            p{
-            font-size: 15px;
-            line-height: 25px;
-            margin: 10px;
-            }
-        } 
-    }
+        }                
     .TextoFondo{
-        color: white;
-        font-size: 20px;
-        background-color: red;
-        font-style: italic;
-        text-align: center;
+    color: white;
+    font-size: 20px;
+    background-color: red;
+    font-style: italic;
+    text-align: center;
     }
     
     @media (max-width: 576px){
@@ -79,12 +63,38 @@ main{
     .Contacto{
         @include estilo-contacto;
     }
-    input{
-        font-size: 20px;
-    }
-    @media (max-width: 576px) {
-        input{
-        font-size: 15px;
+    .Mapa{
+        width: 100%;
+        height: 97%;
+        margin: 10px auto;
+        @media (max-width: 576px){
+            width: 90%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
         }
+    }
+    .VideoYT{
+        width: 100%;
+        height: 350px; 
+    }    
+    .ImgNico {
+        @extend .IMGnico-juan;
+    }
+    
+    .ImgJuan{
+        @extend .IMGnico-juan;
+    }
+    .ImgPichot{
+        object-fit: cover;
+        width: 100%;
+        height: 416px;
+        @media (max-width: 576px){
+            height: auto;
+        }
+    }
+    .ImgHern{
+        width: 100%;
     }
 }
